@@ -13,16 +13,48 @@
     color: var(--main-color);
 }
 
+
 body {
     display: flex;
     justify-content: center;
 }
 
 .main-container {
+    display:flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration : none;
+    color : black;
+}
+
+/*Partie navigation*/
+
+nav {
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    padding : 30px;
+}
+
+nav img {
+    margin : 20px;
+    margin-left : 40px;
+    width:100px;
+}
+
+nav a:hover{
+    color : #0065FC;
+    border-top: #0065FC solid 5px;
 }
 
 .section-title {
